@@ -411,6 +411,7 @@ span {
     font-weight: 400;
     max-height: 100px;
     margin: auto;
+    text-align: justify;
 }
 
 .contact {
