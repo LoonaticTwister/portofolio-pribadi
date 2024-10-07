@@ -12,10 +12,15 @@
 }
 
 :root {
-    --bg-color:#111111;
-    --second-bg-color:#151515;
+    --bg-color:#021526;
+    --second-bg-color:#03346E;
     --text-color:white;
-    --main-color:#04fffb;
+    --main-color:#6EACDA;
+    
+     /* --bg-color:white;
+     --second-bg-color:gray;
+     --text-color:black;
+     --main-color:rgb(90, 154, 209); */
 }
 
 html {
@@ -55,7 +60,7 @@ body {
 }
 
 .navbar a{
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     color: white;
     margin-left: 4rem;
     font-weight: 500;
@@ -220,19 +225,19 @@ span {
 @keyframes words {
     0%,
     20%{
-        content: 'Web Developer';
+        content: 'Network Engineer';
     }
     21%,
     40%{
-        content: 'Data Analyst';
+        content: 'Linux Administrator';
     }
     41%,
     60%{
-        content: 'Network Engineer';
+        content: 'Database Administrator';
     }
     61%,
     80%{
-        content: 'Linux Administrator';
+        content: 'UI/UX Designer';
     }
     81%,
     100%{
@@ -316,6 +321,11 @@ span {
 .about-content p {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
+    text-align: justify;
+}
+
+.about-content p br {
+    line-height: 100cm;
 }
 
 .about-content .text-animation span::before {
@@ -348,39 +358,39 @@ span {
     width: 50px;
 }
 
-.services {
+.experience {
     background: var(--bg-color);
     color: white;
 }
 
-.services h2 {
+.experience h2 {
     margin-bottom: 5rem;
     color: white;
 }
 
-.services-container {
+.experience-container {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     align-items: center;
     gap: 2.5rem;
 }
 
-.services-box {
+.experience-box {
     background-color: var(--main-color);
     color: black;
-    height: 250px;
+    height: 275px;
     border-radius: 3rem;
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
 
-.services-box:hover {
+.experience-box:hover {
     background: white;
     color: var(--main-color);
     transform: scale(1.03);
 }
 
-.services-box .services-info {
+.experience-box .experience-info {
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -390,13 +400,13 @@ span {
     padding: 5em;
 }
 
-.services-info h4 {
+.experience-info h4 {
     font-size: 2.5rem;
     font-weight: 500;
     margin-bottom: 1rem;
 }
 
-.services-info p {
+.experience-info p {
     font-size: 1.6rem;
     font-weight: 400;
     max-height: 100px;
@@ -514,7 +524,7 @@ span {
         font-size: 55%;
     }
 
-    .services-container {
+    .experience-container {
         padding-bottom: 7rem;
         grid-template-columns: repeat(2,1fr);
         margin: 0 5rem;
@@ -530,7 +540,7 @@ span {
         padding: 10rem 3% 2rem;
     }
 
-    .services {
+    .experience {
         padding-bottom: 7rem;
     }
 
@@ -603,11 +613,11 @@ span {
         margin-bottom: 3rem;
     }
 
-    .services h2 {
+    .experience h2 {
         margin-bottom: 3rem;
     }
 
-    .services-container {
+    .experience-container {
         grid-template-columns: repeat(1,1fr);
     }
 }
