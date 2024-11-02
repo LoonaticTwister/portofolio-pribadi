@@ -432,6 +432,17 @@ span {
     text-align: justify;
 }
 
+.jadwal-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.jadwal-item h3 {
+    font-size: 1.2em;
+    color: #333;
+}
+
 .contact {
     background-color: var(--second-bg-color);
 }

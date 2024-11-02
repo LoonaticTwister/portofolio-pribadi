@@ -19,7 +19,17 @@ window.onscroll = () => {
         }
     })
 }
+
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    fetch("get_jadwal.php")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("jadwal-container").innerHTML = data;
+        })
+        .catch(error => console.error("Error:", error));
+});
