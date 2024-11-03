@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
     fetch("get_jadwal.php")
         .then(response => response.text())
         .then(data => {
-            document.getElementById("jadwal-container").innerHTML = data;
+            document.querySelector(".jadwal-table tbody").innerHTML = data;
         })
         .catch(error => console.error("Error:", error));
 });

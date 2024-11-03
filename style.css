@@ -354,7 +354,7 @@ span {
 }
 
 .about .icon-container i {
-    font-size: 4rem; /* Ukuran ikon */
+    font-size: 4rem; 
     transition: transform 0.3s, color 0.3s;
 }
 
@@ -432,16 +432,61 @@ span {
     text-align: justify;
 }
 
-.jadwal-item {
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
+.jadwal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #0d1117;
+    color: white;
 }
-.jadwal-item h3 {
-    font-size: 1.2em;
-    color: #333;
+
+.heading {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
 }
+
+#jadwal-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.jadwal-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #161b22;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.jadwal-table th,
+.jadwal-table td {
+    padding: 10px 15px;
+    border: 1px solid #30363d;
+}
+
+.jadwal-table th {
+    background-color: #21262d;
+    font-weight: bold;
+    color: #58a6ff;
+}
+
+.jadwal-table tr:nth-child(even) {
+    background-color: #0d1117;
+}
+
+.jadwal-table tr:hover {
+    background-color: #30363d;
+}
+
 
 .contact {
     background-color: var(--second-bg-color);
